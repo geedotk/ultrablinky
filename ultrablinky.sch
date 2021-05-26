@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Ultrablinky"
-Date "2021-04-09"
-Rev "A"
+Date "2021-05-26"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -721,7 +721,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 2200 7700 2200
 Wire Wire Line
-	1800 1850 1300 1850
+	1800 1550 1300 1550
 Text Label 1350 2050 0    50   ~ 0
 D_CS
 Text Label 1350 1950 0    50   ~ 0
@@ -730,7 +730,7 @@ Text Label 1350 2150 0    50   ~ 0
 COPI
 Text Label 7750 2200 0    50   ~ 0
 CIPO
-Text Label 1350 1850 0    50   ~ 0
+Text Label 1350 1550 0    50   ~ 0
 T_CS
 Text Label 1350 2250 0    50   ~ 0
 CIPO
@@ -831,17 +831,17 @@ Wire Wire Line
 $Comp
 L Device:R R9
 U 1 1 60469D9C
-P 1950 1850
-F 0 "R9" V 1900 2000 50  0000 C CNN
-F 1 "33" V 1950 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 1850 50  0001 C CNN
-F 3 "~" H 1950 1850 50  0001 C CNN
-F 4 "Mouser 603-RC0805JR-1333RL" H 1950 1850 50  0001 C CNN "Source"
-	1    1950 1850
+P 1950 1550
+F 0 "R9" V 1900 1750 50  0000 C CNN
+F 1 "33" V 1950 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 1550 50  0001 C CNN
+F 3 "~" H 1950 1550 50  0001 C CNN
+F 4 "Mouser 603-RC0805JR-1333RL" H 1950 1550 50  0001 C CNN "Source"
+	1    1950 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2100 1850 2400 1850
+	2100 1550 2400 1550
 Wire Wire Line
 	8850 1900 8850 2500
 Connection ~ 8850 1900
@@ -1527,7 +1527,7 @@ F 3 "" H 7500 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 1000 8100 1050
-Text Label 1350 1750 0    50   ~ 0
+Text Label 1350 1650 0    50   ~ 0
 D_LEDEN
 $Comp
 L Device:C C19
@@ -2925,12 +2925,12 @@ Text Label 1350 3550 0    50   ~ 0
 I2S_LRCLK
 Text Label 5200 3550 0    50   ~ 0
 I2S_MCLK
-Text Label 1350 1550 0    50   ~ 0
+Text Label 1350 1850 0    50   ~ 0
 I2S_SDIN
-Text Label 1350 1650 0    50   ~ 0
+Text Label 1350 1750 0    50   ~ 0
 I2S_SDOUT
 Wire Wire Line
-	1300 1650 1800 1650
+	1300 1750 1800 1750
 Wire Wire Line
 	1300 3650 1850 3650
 Wire Wire Line
@@ -2940,20 +2940,20 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 60863598
-P 1950 1650
+P 1950 1750
 AR Path="/5EB2E933/60863598" Ref="R?"  Part="1" 
 AR Path="/60863598" Ref="R10"  Part="1" 
 AR Path="/60675ACD/60863598" Ref="R?"  Part="1" 
-F 0 "R10" V 2000 1500 50  0000 C CNN
-F 1 "33" V 1950 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 1650 50  0001 C CNN
-F 3 "~" H 1950 1650 50  0001 C CNN
-F 4 "Mouser 603-RC0805JR-1333RL" H 1950 1650 50  0001 C CNN "Source"
-	1    1950 1650
+F 0 "R10" V 2000 1550 50  0000 C CNN
+F 1 "33" V 1950 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 1750 50  0001 C CNN
+F 3 "~" H 1950 1750 50  0001 C CNN
+F 4 "Mouser 603-RC0805JR-1333RL" H 1950 1750 50  0001 C CNN "Source"
+	1    1950 1750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 1650 2400 1650
+	2100 1750 2400 1750
 $Comp
 L 0_my_symbols:Teensy4.0 U3
 U 1 1 602C7AEE
@@ -2969,9 +2969,9 @@ $EndComp
 Wire Wire Line
 	2250 950  2250 2550
 Wire Wire Line
-	1300 1750 2400 1750
+	1300 1650 2400 1650
 Wire Wire Line
-	1300 1550 2400 1550
+	1300 1850 2400 1850
 $Comp
 L Device:R R15
 U 1 1 609BBB13
