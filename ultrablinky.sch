@@ -49,8 +49,6 @@ F 4 "Mouser 603-RC0805JR-071KL" H 4550 7150 50  0001 C CNN "Source"
 	1    4550 7150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5150 6750 5000 6750
 $Comp
 L Device:C C21
 U 1 1 602ACE7B
@@ -139,17 +137,6 @@ $EndComp
 Wire Wire Line
 	4300 6750 4100 6750
 Connection ~ 4300 6750
-$Comp
-L power:+36V #PWR0102
-U 1 1 602C08DE
-P 5450 6050
-F 0 "#PWR0102" H 5450 5900 50  0001 C CNN
-F 1 "+36V" H 5465 6223 50  0000 C CNN
-F 2 "" H 5450 6050 50  0001 C CNN
-F 3 "" H 5450 6050 50  0001 C CNN
-	1    5450 6050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 7150 3450 7150
 Wire Wire Line
@@ -185,17 +172,6 @@ Wire Wire Line
 	5600 8900 5600 8950
 Wire Wire Line
 	5600 8950 5700 8950
-$Comp
-L power:+36V #PWR0106
-U 1 1 6031BE2D
-P 4550 8400
-F 0 "#PWR0106" H 4550 8250 50  0001 C CNN
-F 1 "+36V" H 4565 8573 50  0000 C CNN
-F 2 "" H 4550 8400 50  0001 C CNN
-F 3 "" H 4550 8400 50  0001 C CNN
-	1    4550 8400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Schottky D2
 U 1 1 6031F877
@@ -867,34 +843,34 @@ F 4 "~" H 5450 2750 50  0001 C CNN "Source"
 $EndComp
 NoConn ~ 2400 2350
 Text Notes 600  8700 0    50   ~ 0
-36 VDC\n4A
+48 VDC\n3A
 Text Notes 8950 8800 0    59   ~ 0
 Photosensitive Epilepsy Warning\n"Between 3-30 hertz (flashes per second) are the common \nrates to trigger seizures but this varies from person to person"\nhttps://epilepsysociety.org.uk/photosensitive-epilepsy
 $Comp
 L Connector_Generic:Conn_01x03 J6
 U 1 1 603BCC4E
-P 1250 4800
-F 0 "J6" H 1300 4500 50  0000 C CNN
-F 1 "DNP" H 1300 4600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1250 4800 50  0001 C CNN
-F 3 "~" H 1250 4800 50  0001 C CNN
-F 4 "~" H 1250 4800 50  0001 C CNN "Source"
-	1    1250 4800
+P 800 3450
+F 0 "J6" H 850 3150 50  0000 C CNN
+F 1 "DNP" H 850 3250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 3450 50  0001 C CNN
+F 3 "~" H 800 3450 50  0001 C CNN
+F 4 "~" H 800 3450 50  0001 C CNN "Source"
+	1    800  3450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1450 4900 1550 4900
+	1000 3550 1100 3550
 Wire Wire Line
-	1550 4900 1550 5000
+	1100 3550 1100 3650
 $Comp
 L power:GND #PWR0125
 U 1 1 603E24AC
-P 1550 5000
-F 0 "#PWR0125" H 1550 4750 50  0001 C CNN
-F 1 "GND" H 1555 4827 50  0000 C CNN
-F 2 "" H 1550 5000 50  0001 C CNN
-F 3 "" H 1550 5000 50  0001 C CNN
-	1    1550 5000
+P 1100 3650
+F 0 "#PWR0125" H 1100 3400 50  0001 C CNN
+F 1 "GND" H 1105 3477 50  0000 C CNN
+F 2 "" H 1100 3650 50  0001 C CNN
+F 3 "" H 1100 3650 50  0001 C CNN
+	1    1100 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1086,8 +1062,6 @@ Wire Wire Line
 	2600 7000 2900 7000
 Wire Wire Line
 	5450 6950 5450 7000
-Wire Wire Line
-	4700 7150 5000 7150
 Wire Wire Line
 	5300 7150 5300 7000
 Wire Wire Line
@@ -1287,10 +1261,6 @@ Wire Wire Line
 	4600 2550 5050 2550
 Text Label 4650 2550 0    50   ~ 0
 FOCUS
-Wire Wire Line
-	1300 3350 2400 3350
-Wire Wire Line
-	1300 3450 2400 3450
 Wire Wire Line
 	1300 6650 2000 6650
 Wire Wire Line
@@ -2996,14 +2966,6 @@ F 4 "Mouser 603-RC0805JR-1333RL" H 2000 3550 50  0001 C CNN "Source"
 $EndComp
 Wire Wire Line
 	2150 3550 2400 3550
-Text Label 1550 4700 0    50   ~ 0
-SDA
-Text Label 1550 4800 0    50   ~ 0
-SCL
-Wire Wire Line
-	1750 4700 1450 4700
-Wire Wire Line
-	1750 4800 1450 4800
 Text Notes 11900 8500 0    50   ~ 0
 I2C\n7-bit addr\n0001010
 $Comp
@@ -3404,11 +3366,11 @@ Wire Wire Line
 Wire Wire Line
 	6650 8700 6900 8700
 Text Label 1750 8400 0    50   ~ 0
-V36IN
+VIN
 Text Label 1750 8800 0    50   ~ 0
 GNDIN
 Text Label 2600 8500 0    50   ~ 0
-V36L
+VL
 Connection ~ 4350 8500
 Connection ~ 4750 8500
 Wire Wire Line
@@ -3416,7 +3378,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 8500 5100 8500
 Text Label 3450 8500 0    50   ~ 0
-V36SW
+VSW
 $Comp
 L Device:C C?
 U 1 1 6052D93C
@@ -3602,25 +3564,15 @@ Wire Wire Line
 $Comp
 L Diode:BZX84Cxx D6
 U 1 1 60EC40DE
-P 5000 6950
-F 0 "D6" V 4954 7030 50  0000 L CNN
-F 1 "BZX84C10LT1G" V 5250 6750 50  0000 L CNN
-F 2 "Diode_SMD:D_SOT-23_ANK" H 5000 6775 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" H 5000 6950 50  0001 C CNN
-F 4 "Mouser 863-BZX84C10LT1G" H 5000 6950 50  0001 C CNN "Source"
-	1    5000 6950
+P 3150 5600
+F 0 "D6" V 3104 5680 50  0000 L CNN
+F 1 "BZX84C10LT1G" V 3150 4950 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 3150 5425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" H 3150 5600 50  0001 C CNN
+F 4 "Mouser 863-BZX84C10LT1G" H 3150 5600 50  0001 C CNN "Source"
+	1    3150 5600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5000 7100 5000 7150
-Connection ~ 5000 7150
-Wire Wire Line
-	5000 7150 5300 7150
-Wire Wire Line
-	5000 6800 5000 6750
-Connection ~ 5000 6750
-Wire Wire Line
-	5000 6750 4700 6750
 $Comp
 L power:+5V #PWR01
 U 1 1 60FFEE89
@@ -3634,17 +3586,100 @@ F 3 "" H 3450 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 6050 3450 6200
-Wire Wire Line
-	3700 6050 3700 6250
 $Comp
-L power:+36V #PWR02
-U 1 1 61028729
-P 3700 6050
-F 0 "#PWR02" H 3700 5900 50  0001 C CNN
-F 1 "+36V" H 3715 6223 50  0000 C CNN
-F 2 "" H 3700 6050 50  0001 C CNN
-F 3 "" H 3700 6050 50  0001 C CNN
-	1    3700 6050
+L power:VDC #PWR?
+U 1 1 6106C1A4
+P 4550 8400
+F 0 "#PWR?" H 4550 8300 50  0001 C CNN
+F 1 "VDC" H 4565 8573 50  0000 C CNN
+F 2 "" H 4550 8400 50  0001 C CNN
+F 3 "" H 4550 8400 50  0001 C CNN
+	1    4550 8400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VDC #PWR?
+U 1 1 6107AF6A
+P 5450 6050
+F 0 "#PWR?" H 5450 5950 50  0001 C CNN
+F 1 "VDC" H 5465 6223 50  0000 C CNN
+F 2 "" H 5450 6050 50  0001 C CNN
+F 3 "" H 5450 6050 50  0001 C CNN
+	1    5450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 6108F88A
+P 3600 5350
+F 0 "Q?" H 3791 5396 50  0000 L CNN
+F 1 "MMBT3904" H 3800 5300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 5275 50  0001 L CIN
+F 3 "http://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf" H 3600 5350 50  0001 L CNN
+F 4 "Mouser 863-MMBT3904LT3G" H 3600 5350 50  0001 C CNN "Source"
+	1    3600 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5550 3700 6250
+Wire Wire Line
+	4700 7150 5300 7150
+Wire Wire Line
+	4700 6750 5150 6750
+$Comp
+L power:GND #PWR?
+U 1 1 610CE73D
+P 3150 5800
+F 0 "#PWR?" H 3150 5550 50  0001 C CNN
+F 1 "GND" H 3155 5627 50  0000 C CNN
+F 2 "" H 3150 5800 50  0001 C CNN
+F 3 "" H 3150 5800 50  0001 C CNN
+	1    3150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5800 3150 5750
+Wire Wire Line
+	3150 5450 3150 5350
+Wire Wire Line
+	3150 5350 3400 5350
+$Comp
+L power:VDC #PWR?
+U 1 1 6114E880
+P 3700 4850
+F 0 "#PWR?" H 3700 4750 50  0001 C CNN
+F 1 "VDC" H 3715 5023 50  0000 C CNN
+F 2 "" H 3700 4850 50  0001 C CNN
+F 3 "" H 3700 4850 50  0001 C CNN
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4850 3700 4900
+$Comp
+L Device:R R?
+U 1 1 6117A498
+P 3150 5150
+F 0 "R?" H 2950 5150 50  0000 L CNN
+F 1 "100k" V 3150 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 5150 50  0001 C CNN
+F 3 "~" H 3150 5150 50  0001 C CNN
+F 4 "Mouser 603-RC0805JR-07100KL" H 3150 5150 50  0001 C CNN "Source"
+	1    3150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5300 3150 5350
+Connection ~ 3150 5350
+Wire Wire Line
+	3150 5000 3150 4900
+Wire Wire Line
+	3150 4900 3700 4900
+Connection ~ 3700 4900
+Wire Wire Line
+	3700 4900 3700 5150
+Wire Wire Line
+	1000 3350 2400 3350
+Wire Wire Line
+	1000 3450 2400 3450
 $EndSCHEMATC
