@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name 0_project_footprints)(type KiCad)(uri ${KIPRJMOD}/project_libraries/project_footprints.pretty)(options "")(descr ""))
+  (lib (name 0_project_footprints)(type KiCad)(uri /home/glenn/Development/Projects/ultrablinky/KiCad/ultrablinky/project_libraries/project_footprints.pretty)(options "")(descr ""))
 )
