@@ -1255,22 +1255,10 @@ F 3 "" H 5200 2900 50  0001 C CNN
 	1    5200 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x05 J7
-U 1 1 607E6AEB
-P 14750 1750
-F 0 "J7" H 14830 1792 50  0000 L CNN
-F 1 "Terminal5" H 14830 1701 50  0000 L CNN
-F 2 "0_my_footprints:TerminalBlock_Molex_39532-1005,5-5.08_1x05_P5.08mm_Horizontal_Pluggable" H 14750 1750 50  0001 C CNN
-F 3 "~" H 14750 1750 50  0001 C CNN
-F 4 "Mouser 538-39530-0005, Mouser 538-39532-1005" H 14750 1750 50  0001 C CNN "Source"
-	1    14750 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	14550 1550 14450 1550
+	14550 2050 14450 2050
 Wire Wire Line
-	14450 1550 14450 2150
+	14450 2050 14450 2150
 $Comp
 L power:GND #PWR0137
 U 1 1 607F5191
@@ -3684,5 +3672,16 @@ F 2 "0_project_footprints:logo_ultrablinky" H 14300 9550 50  0001 C CNN
 F 3 "" H 14300 9550 50  0001 C CNN
 	1    14300 9550
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J7
+U 1 1 612E9888
+P 14750 1850
+F 0 "J7" H 14668 1425 50  0000 C CNN
+F 1 "Conn_01x05" H 14668 1516 50  0000 C CNN
+F 2 "0_my_footprints:Molex_Mini-Fit_Jr_39-30-3055_1x05_P4.20mm_Horizontal" H 14750 1850 50  0001 C CNN
+F 3 "~" H 14750 1850 50  0001 C CNN
+	1    14750 1850
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
