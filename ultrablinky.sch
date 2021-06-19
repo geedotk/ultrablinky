@@ -1682,20 +1682,6 @@ F 3 "" H 10700 9450 50  0001 C CNN
 	1    10700 9450
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Audio:SGTL5000XNAA3 U?
-U 1 1 614B24E2
-P 13550 7300
-AR Path="/60675ACD/614B24E2" Ref="U?"  Part="1" 
-AR Path="/614B24E2" Ref="U1"  Part="1" 
-F 0 "U1" H 14150 6450 50  0000 C CNN
-F 1 "SGTL5000" H 14400 6350 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm" H 13550 7300 50  0001 C CNN
-F 3 "http://www.nxp.com/docs/en/data-sheet/SGTL5000.pdf" H 13550 7300 50  0001 C CNN
-F 4 "Mouser 841-SGTL5000XNAA3R2" H 13550 7300 50  0001 C CNN "Source"
-	1    13550 7300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14550 6600 14150 6600
 Wire Wire Line
@@ -2051,7 +2037,6 @@ Wire Wire Line
 	13200 5200 13550 5200
 NoConn ~ 14150 7000
 NoConn ~ 14150 7100
-NoConn ~ 14150 7200
 $Comp
 L Device:C C?
 U 1 1 614B25B8
@@ -3314,12 +3299,12 @@ Wire Wire Line
 	1550 8900 1150 8900
 Connection ~ 1550 8800
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 60735E73
 P 8600 9950
-F 0 "#LOGO1" H 8600 10225 50  0001 C CNN
+F 0 "LOGO1" H 8600 10225 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 8600 9725 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 8600 9950 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 8600 9950 50  0001 C CNN
 F 3 "~" H 8600 9950 50  0001 C CNN
 	1    8600 9950
 	1    0    0    -1  
@@ -3674,4 +3659,30 @@ Wire Wire Line
 	4800 8500 5100 8500
 Wire Wire Line
 	4550 8500 4800 8500
+NoConn ~ 14150 7200
+$Comp
+L Audio:SGTL5000XNAA3 U?
+U 1 1 614B24E2
+P 13550 7300
+AR Path="/60675ACD/614B24E2" Ref="U?"  Part="1" 
+AR Path="/614B24E2" Ref="U1"  Part="1" 
+F 0 "U1" H 14150 6450 50  0000 C CNN
+F 1 "SGTL5000" H 14400 6350 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm" H 13550 7300 50  0001 C CNN
+F 3 "http://www.nxp.com/docs/en/data-sheet/SGTL5000.pdf" H 13550 7300 50  0001 C CNN
+F 4 "Mouser 841-SGTL5000XNAA3R2" H 13550 7300 50  0001 C CNN "Source"
+	1    13550 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project_symbol_library:Ultrablinky_logo LOGO2
+U 1 1 61166262
+P 14300 9550
+F 0 "LOGO2" H 14300 9306 60  0001 C CNN
+F 1 "Ultrablinky_logo" H 14300 9794 60  0001 C CNN
+F 2 "0_project_footprints:logo_ultrablinky" H 14300 9550 50  0001 C CNN
+F 3 "" H 14300 9550 50  0001 C CNN
+	1    14300 9550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
