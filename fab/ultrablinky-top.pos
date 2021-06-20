@@ -1,4 +1,4 @@
-### Module positions - created on Sat Jun 19 17:21:48 2021 ###
+### Module positions - created on Sat Jun 19 20:12:12 2021 ###
 ### Printed by Pcbnew version kicad 5.1.10-88a1d61d58~88~ubuntu20.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -23,7 +23,7 @@ C17       10nF             C_0805_2012Metric                     146.2500  -111.
 C18       10nF             C_0805_2012Metric                     152.0250  -111.6000  180.0000  top
 C19       10nF             C_0805_2012Metric                     108.9000  -114.8000  270.0000  top
 C20       100pF            C_0805_2012Metric                     122.4500  -115.0500  180.0000  top
-C21       22uF             C_1210_3225Metric                     117.3750  -116.2000    0.0000  top
+C21       10uF             C_1206_3216Metric                     117.3750  -116.2000    0.0000  top
 C22       .1uF             R_0805_2012Metric                      83.3500  -116.5125  270.0000  top
 C23       10nF             C_0805_2012Metric                     128.5500  -121.5500  180.0000  top
 C24       100pF            C_0805_2012Metric                      67.8000  -122.5500  270.0000  top
